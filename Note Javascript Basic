@@ -1,0 +1,57 @@
+primitive value and Object .
+
+in javascript everything is an object except primitive type.
+String,Number,Boolean can be Object if defined with keyword "new" 
+
+
+
+Array.prototype.reduce() has two argument is a callback function and initValue.
+callback function it will be called once for every item in the array.
+This function takes four argument, but often only the fisrt two argument.
+
+accumulator - the returned value of the previous iteration.(if don't have initvalue => accumulator= first value of array)
+currentValue -the current item in the array.
+index - the index of the current item
+array - the original array on which reduce was called.
+
+
+Compare Array.prototype.map() and Array.prototype.reduce()
+difference:
+
++ Map : return an array. has size equal array original.tranform value of array
+
++ reduce: return single value that is can be of any type.
+
++ argument of callback function:+ Map has three argument :current value, index , array original
+				+ reduce has four argument: accumulator ,current value,index,array
+
+
+array.prototype.filter() : it takes each element in the array and it applies a conditional statement agains it. if this conditional return true. the element gets "pushed" to the output array.
+
+
+javaScript Object are Mutable 
+Object are mutable : they are addressed by reference, not by value
+
+Note: Javascript variables are not mutable.Only Javascript object.
+
++Javacript Prototypes:
+All JavaScript objects inherit the properties and methods from their prototype.
+
+Objects created using an object literal, or with new Object(), inherit from a prototype called Object.prototype.
+
+Objects created with new Date() inherit the Date.prototype.
+
+The Object.prototype is on the top of the prototype chain.
+
+All JavaScript objects (Date, Array, RegExp, Function, ....) inherit from the Object.prototype.
+adding properties and methods to Objects
+sometimes you want to add new properties(or methods) to an existing object
+sometimes you want to add new properties(or methods) to all existing object of a given type.
+sometimes you want to add new properties(or methods) to an object prototype
+
+Note: Prototype properties can have prototype values (default values).????? what the default values of prototype properties.
+
+----------------------------------------------Number--------------------------------------------------------------
+javascript will try to convert strings to numbers in all numeric operations: / * -  except operator : + 
+
+
